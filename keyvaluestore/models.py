@@ -1,8 +1,9 @@
 from django.db import models
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from django.core.cache import cache
 
 from keyvaluestore.managers import KeyValueStoreManager
+
 
 class KeyValueStore(models.Model):
     key = models.CharField(max_length=200, primary_key=True, db_index=True, unique=True)
