@@ -1,5 +1,10 @@
 from keyvaluestore.models import KeyValueStore
 
+
+def get_cache_key(key):
+    return 'kvs_%s' % (key, )
+
+
 def get_value_for_key(key):
     return KeyValueStore.objects.get_value_for_key(key)
 

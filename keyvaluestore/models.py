@@ -18,8 +18,6 @@ class KeyValueStore(models.Model):
         return '%s: %s' % (self.key, self.value)
 
     def save(self, *args, **kwargs):
-        self.key = self.key.upper()
-
         cache.delete(self.cached_key)
         cache.set(self.cached_key, self.value)
 
@@ -27,4 +25,5 @@ class KeyValueStore(models.Model):
 
     @property
     def cached_key(self):
-        return 'kvs_%s' % (self.key,)
+        from keyvaluestore.utils import get_cache_key
+        return get_cache_key(self.key)
