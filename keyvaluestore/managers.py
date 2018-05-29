@@ -9,7 +9,7 @@ class KeyValueStoreManager(models.Manager):
         cached_key = get_cache_key(key)
         cached = cache.get(cached_key)
 
-        if not cached:
+        if cached is None:
             try:
                 obj = self.get(key=key)
                 cache.set(cached_key, obj.value)
