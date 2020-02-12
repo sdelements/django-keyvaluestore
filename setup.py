@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
+from setuptools import setup
 import keyvaluestore
 
 
@@ -12,7 +12,7 @@ setup(
     long_description=open('README.rst', 'r').read(),
     author='Unleashed NV',
     author_email='operations@unleashed.be',
-    packages=find_packages('.'),
+    packages=['keyvaluestore'],
     zip_safe=False,
     classifiers=[
         'Intended Audience :: Developers',
