@@ -30,11 +30,11 @@ classifiers=[
 ]
 packages = [
   { include = "keyvaluestore" },
-  { include = "tests", format = "sdist" },
+  { include = "testing", format = "sdist" },
 ]
 exclude = [
   "keyvaluestore/**/tests",
-  "tests"
+  "testing"
 ]
 
 [tool.poetry.dependencies]
@@ -53,6 +53,8 @@ flake8-polyfill = "1.0.2"
 isort = "5.13.2"
 # security
 bandit = "1.7.8"
+# test
+django-upgrade = "1.18.0"
 
 [build-system]
 requires = ["poetry-core"]

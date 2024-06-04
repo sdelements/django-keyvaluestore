@@ -169,6 +169,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-upgrade"
+version = "1.18.0"
+description = "Automatically upgrade your Django project code."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django_upgrade-1.18.0-py3-none-any.whl", hash = "sha256:bae6a466bb9dd63dd7e23b665499b84499b2661348f06b371b88d2e609aa0df9"},
+    {file = "django_upgrade-1.18.0.tar.gz", hash = "sha256:ae2a2de13e7804773201aef6af2245fa5d503b0a7c88b85b12cf1fdb84197065"},
+]
+
+[package.dependencies]
+tokenize-rt = ">=4.1"
+
+[[package]]
 name = "filelock"
 version = "3.14.0"
 description = "A platform independent file lock."
@@ -597,6 +611,17 @@ files = [
 pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
+name = "tokenize-rt"
+version = "5.2.0"
+description = "A wrapper around the stdlib `tokenize` which roundtrips."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "tokenize_rt-5.2.0-py2.py3-none-any.whl", hash = "sha256:b79d41a65cfec71285433511b50271b05da3584a1da144a0752e9c621a285289"},
+    {file = "tokenize_rt-5.2.0.tar.gz", hash = "sha256:9fe80f8a5c1edad2d3ede0f37481cc0cc1538a2f442c9c2f9e4feacd2792d054"},
+]
+
+[[package]]
 name = "tzdata"
 version = "2024.1"
 description = "Provider of IANA time zone data"
@@ -630,4 +655,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.12"
-content-hash = "5190936e0429585f5f0c246b154dc0e4cdfec9bbd61b6a099a1d9d06db07a2ee"
+content-hash = "b56e5369f55e0037bbbb0078b5024b35d7ae0883c1985928ca8cdb47ecfeb262"
