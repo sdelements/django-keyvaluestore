@@ -4,7 +4,7 @@ version = "0.6.0"
 homepage = "https://github.com/sdelements/django-keyvaluestore"
 description = "A simple key-value-store for Django"
 authors = ["Security Compass <contact@securitycompass.com>"]
-license = "MIT"
+license = "BSD-3-Clause"
 readme = "README.md"
 # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
 classifiers=[
@@ -19,7 +19,7 @@ classifiers=[
     'Topic :: Software Development :: Libraries :: Python Modules',
 
     # Pick your license as you wish (should match "license" above)
-    'License :: OSI Approved :: MIT License',
+    'License :: OSI Approved :: BSD-3-Clause',
 
     # Supported Languages
     'Natural Language :: English',
