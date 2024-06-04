@@ -1,8 +1,8 @@
-# django-keyvaluestorage
+# django-keyvaluestore
 
-django-keyvaluestorage implements a very simple database-based key-value store for Django.
+django-keyvaluestore implements a very simple database-based key-value store for Django.
 
-Published on PyPi as https://pypi.org/project/django-keyvaluestorage/ due to conflicting package name.
+Published on PyPi as https://pypi.org/project/django-keyvaluestore/ due to conflicting package name.
 
 ## Usage
 
