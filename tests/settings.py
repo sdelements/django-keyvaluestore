@@ -8,7 +8,7 @@ MANAGERS = ADMINS
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "testing.db",
+        "NAME": "tests_db",
         "USER": "",
         "PASSWORD": "",
         "HOST": "",
