@@ -36,4 +36,4 @@ jobs:
       - name: Security
         run: poetry run bandit -c pyproject.toml -r .
       - name: Testing
-        run: python ./runtests.py
+        run: poetry run python ./runtests.py
