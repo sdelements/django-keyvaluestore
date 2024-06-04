@@ -6,47 +6,42 @@ DEBUG = True
 ADMINS = ()
 MANAGERS = ADMINS
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'testing.db',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "testing.db",
+        "USER": "",
+        "PASSWORD": "",
+        "HOST": "",
+        "PORT": "",
     }
 }
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = "America/Chicago"
 USE_TZ = True
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
 
-SECRET_KEY = 'p_2zsf+@4uw$kcdl$!tkf0lrh%w^!#@2@iwo4plef2n$(@uj4_'
+SECRET_KEY = "foobar"  # noqa: S105
 
-MIDDLEWARE = (
-    'django.middleware.common.CommonMiddleware',
-)
+MIDDLEWARE = ("django.middleware.common.CommonMiddleware",)
 
-INSTALLED_APPS = (
-    'keyvaluestore',
-    'tests'
-)
+INSTALLED_APPS = ("keyvaluestore", "tests")
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
         },
     },
-    'loggers': {
-        '': {
-            'handlers': ['console'],
-            'level': 'WARNING',
-            'propagate': True,
+    "loggers": {
+        "": {
+            "handlers": ["console"],
+            "level": "WARNING",
+            "propagate": True,
         },
     },
 }
