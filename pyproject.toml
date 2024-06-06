@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-keyvaluestore"
-version = "0.6.0"
+version = "1.0.0"
 homepage = "https://github.com/sdelements/django-keyvaluestore"
 description = "A simple key-value-store for Django"
 authors = ["Security Compass <contact@securitycompass.com>"]
