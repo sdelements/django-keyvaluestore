@@ -1,6 +1,6 @@
-from django.db import models
-from django.utils.translation import ugettext_lazy as _
 from django.core.cache import cache
+from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 from keyvaluestore.managers import KeyValueStoreManager
 
@@ -12,11 +12,11 @@ class KeyValueStore(models.Model):
     objects = KeyValueStoreManager()
 
     class Meta:
-        verbose_name = _('Key Value pair')
-        verbose_name_plural = _('Key Value pairs')
+        verbose_name = _("Key Value pair")
+        verbose_name_plural = _("Key Value pairs")
 
     def __unicode__(self):
-        return '%s: %s' % (self.key, self.value)
+        return "%s: %s" % (self.key, self.value)
 
     def save(self, *args, **kwargs):
         cache.delete(self.cached_key)
@@ -27,4 +27,5 @@ class KeyValueStore(models.Model):
     @property
     def cached_key(self):
         from keyvaluestore.utils import get_cache_key
+
         return get_cache_key(self.key)

@@ -2,7 +2,7 @@ from keyvaluestore.models import KeyValueStore
 
 
 def get_cache_key(key):
-    return 'kvs_%s' % (key, )
+    return "kvs_%s" % (key,)
 
 
 def get_value_for_key(key):
@@ -18,7 +18,9 @@ def get_value_or_default(key, default):
 
 
 def set_key_value(key, value):
-    obj, created = KeyValueStore.objects.get_or_create(key=key, defaults={'value': value})
+    obj, created = KeyValueStore.objects.get_or_create(
+        key=key, defaults={"value": value}
+    )
     if not created:
         obj.value = value
         obj.save()

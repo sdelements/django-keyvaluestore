@@ -1,5 +1,5 @@
 lint:
-	find . -name '*.py' | xargs flake8 --ignore=E501,W601
+	poetry run flake8 . --extend-ignore=D,E501,W601 --extend-exclude=docs/ --statistics --count
 
 test:
-	(cd testing; python manage.py test)
+	poetry run python ./runtests.py
