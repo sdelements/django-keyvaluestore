@@ -2,7 +2,13 @@
 
 django-keyvaluestore implements a very simple database-based key-value store for Django.
 
-Published on PyPi as https://pypi.org/project/django-keyvaluestore/ due to conflicting package name.
+This package is a fork and only maintained on an as needed basis since the upstream package is no longer maintained at - https://github.com/vikingco/django-keyvaluestore.
+
+## Install
+
+```bash
+pip install git+https://github.com/sdelements/django-keyvaluestore@master
+```
 
 ## Usage
 
