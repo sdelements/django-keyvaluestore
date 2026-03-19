@@ -16,11 +16,9 @@ DATABASES = {
     }
 }
 TIME_ZONE = "America/Chicago"
-USE_TZ = True
 LANGUAGE_CODE = "en-us"
 SITE_ID = 1
 USE_I18N = True
-USE_L10N = True
 
 SECRET_KEY = "foobar"  # noqa: S105
 
